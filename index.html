@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./reviews.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <h1>JavaScript Tabs Practice</h1>
+  </header>
+  <body>
+    <!--Container for Frog Images below-->
+    <section class="frog-container">
+      <div class="display-frogs" id="display-frogs">
+        <div class="frog-details frog-details-one currently-selected-frog">
+          <img src="./images/frog1.jpg" class="frog-image" />
+          <figcaption>Frog 1</figcaption>
+        </div>
+        <div class="frog-details frog-details-two">
+          <img src="./images/frog2.jpg" class="frog-image" />
+          <figcaption>Frog 2</figcaption>
+        </div>
+        <div class="frog-details frog-details-three">
+          <img src="./images/frof3.jpg" class="frog-image" />
+          <figcaption>Frog 3</figcaption>
+        </div>
+        <div class="frog-details frog-details-four">
+          <img src="./images/frog4.jpg" class="frog-image" />
+          <figcaption>Frog 4</figcaption>
+        </div>
+      </div>
+
+      <!--Frog Buttons below-->
+      <div class="frog-buttons">
+        <button
+          class="frog-button currently-selected-button"
+          id="frog-one"
+          value="one"
+        >
+          Frog one
+        </button>
+        <button class="frog-button" id="frog-two" value="two">Frog two</button>
+        <button class="frog-button" id="frog-three" value="three">
+          Frog three
+        </button>
+        <button class="frog-button" id="frog-four" value="four">
+          Frog four
+        </button>
+      </div>
+    </section>
+
+    <!--Frog Review Quotes Section-->
+    <section class="review-container">
+      <h2 class="review-title">frog reviews</h2>
+      <q
+        id="review-quote"
+        class="review-quote review-details-kermit currently-selected-review"
+        >Frogs are toadally cool</q
+      >
+      <q id="review-quote" class="review-quote review-details-toad"
+        >Unfrogettable stuff!</q
+      >
+      <q id="review-quote" class="review-quote review-details-dapper"
+        >Frog life is absolutely ribbeting</q
+      >
+
+      <!--Frog Review Button/Tab Section below-->
+      <div class="reviews">
+        <div
+          class="individual-reviews review-details-kermit currently-selected-review-button"
+          value="review-details"
+        >
+          <img class="review-img" src="./images/kermit.webp" />
+          <div class="recent-purchase">
+            <strong>
+              <p class="review-name">Kermit</p>
+            </strong>
+            <p class="review-name-info">A muppet</p>
+          </div>
+        </div>
+        <div
+          class="individual-reviews review-details-toad"
+          value="review-details"
+        >
+          <img class="review-img" src="./images/FrogandToad1.webp" />
+          <div class="recent-purchase">
+            <strong>
+              <p class="review-name">Toad</p>
+            </strong>
+            <p class="review-name-info">Frog's husband</p>
+          </div>
+        </div>
+        <div
+          class="individual-reviews review-details-dapper"
+          value="review-details"
+        >
+          <img class="review-img" src="./images/dapperfrog.webp" />
+          <div class="recent-purchase">
+            <strong>
+              <p class="review-name">Dapper</p>
+            </strong>
+            <p class="review-name-info">A dapper guy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--JavaScript script tags below-->
+    <script defer src="./reviews.js"></script>
+    <script defer src="./tabs.js"></script>
+  </body>
+</html>
